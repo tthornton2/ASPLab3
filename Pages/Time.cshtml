@@ -1,0 +1,16 @@
+@page
+@model ASPlab3.Pages.TimeModel
+
+@{
+    ViewData["Title"] = "Time Page";
+}
+
+<div class="text-center">
+    <p>@Model.Message</p>
+    <ul>
+        @foreach (var number in Model.LuckyNumbers)
+        {
+            <li>@number</li>
+        }
+    </ul>
+</div>
